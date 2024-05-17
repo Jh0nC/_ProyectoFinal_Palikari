@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\\xampp\\htdocs\\phpCosiaca\\Proyecto\\model\\Model.php';
+require_once '../model/Model.php';
 
 class userController
 {
@@ -53,5 +53,3 @@ class userController
         header('Location: page.php');
     }
 }
-
-

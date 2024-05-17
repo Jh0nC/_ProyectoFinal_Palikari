@@ -4,68 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Secciones Horizontales con Carrusel</title>
+  <title>Palikari</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
 
-  <div class="w-100 h-100 mask">
-    <nav class="navbar navbar-expand-lg bg-dark opacity-75 position-fixed top-0 w-100 z-3">
-      <div class="container-fluid">
-        <img class="mx-5" src="./img/logo_whiteLine.png" alt=" Pelikari Logo" width="100" />
+  <div class="w-100 h-100 mask" id="inicio">
 
-        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- navbar -->
+    <?php
+    $navbarRoutes = array(
+      'logoImgSrc' => './assets/img/logo_whiteLine.png',
+      'logo' => 'index.php',
+      'inicio' => '#inicio',
+      'comic' => '#comic',
+      'equipo' => '#equipo',
+      'tienda' => './pages/tienda.php',
+      'iniciarSesion' => './pages/auth/login.php'
+    );
+    include_once './partials/navbar.php';
+    ?>
 
-        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link fs-3 text-light" aria-current="page" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3 text-light" aria-current="page" href="#equipo">Equipo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3 link-light" aria-current="page" href="#comic">Comic</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3 link-light" aria-current="page" href="tienda.html">Tienda</a>
-            </li>
-          </ul>
-
-          <div class="me-5 d-flex gap-4">
-            <a class="text-light fs-4 text-decoration-none" href="#">
-              Iniciar sesión
-              <i class="bi bi-person-circle fs-4 ms-3 text-light"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
     <!-- seection #1 -->
     <section id="section1" class="section active">
       <div class="inicio">
         <div class="scroll">
-          <p>Bienvenido a Palikari</p>
+          <p>Bienvenido a Palikari  </p>
           <p>Unete a este viaje</p>
         </div>
 
-        <img src="./img/atn_levantando_lanza_2.gif" alt="" class="img-atenea" />
+        <img src="./assets/img/atn_levantando_lanza_2.gif" alt="" class="img-atenea" />
         <div class="inicio-content bg-dark p-3 rounded-4 opacity-75 shadow-lg mt-5">
           <h1>
             PALIKARI
             <ion-icon class="music-note-icon" name="musical-note-outline"></ion-icon>
           </h1>
-          <p>
+          <p class="fw-light">
             Atenea es la diosa griega de la sabiduría, la estrategia y la guerra
             justa, hija de Zeus. Nació completamente armada de la cabeza de su
             padre. Es símbolo de inteligencia y justicia, y se la representa con
@@ -82,32 +62,32 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/iconos_personajes/atenea.png" class="" />
+            <img src="./assets/img/iconos_personajes/atenea.png" class="" />
             <h3>Atenea</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
           <div class="swiper-slide">
-            <img src="./img/iconos_personajes/humanamedusa.png" class="" />
+            <img src="./assets/img/iconos_personajes/humanamedusa.png" class="" />
             <h3>Medusa</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
           <div class="swiper-slide">
-            <img src="./img/iconos_personajes/medusamo.png" class="" />
+            <img src="./assets/img/iconos_personajes/medusamo.png" class="" />
             <h3>medusamo</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
           <div class="swiper-slide">
-            <img src="./img/iconos_personajes/perseo.png" class="" />
+            <img src="./assets/img/iconos_personajes/perseo.png" class="" />
             <h3>Perseo</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
           <div class="swiper-slide">
-            <img src="./img/iconos_personajes/poseidon.png" class="" />
+            <img src="./assets/img/iconos_personajes/poseidon.png" class="" />
             <h3>Poseidon</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
           <div class="swiper-slide">
-            <img src="./img/iconos_personajes/rey.png" class="" />
+            <img src="./assets/img/iconos_personajes/rey.png" class="" />
             <h3>Rey</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
@@ -120,7 +100,7 @@
     <section id="section3" class="section">
       <div class="w-100 h-100 about-page bg-secondary">
         <div class="bg info">
-          <img src="./img/iconos_personajes/todes.png" alt="" />
+          <img src="./assets/img/iconos_personajes/todes.png" alt="" />
           <div class="info-content">
             <h1>Comic info</h1>
             <p>
@@ -150,7 +130,7 @@
     </nav>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid pb-5 index-content">
     <div class="container-fluid p-5" id="comic">
 
       <!-- comic title -->
@@ -164,7 +144,7 @@
       <!-- comic -->
       <div class="row justify-content-center align-items-center second-prom-panel">
         <div class="col-sm comic">
-          <img src="./img/templo.png" alt="">
+          <img src="./assets/img/templo.png" alt="">
         </div>
         <div class="col-sm comic d-flex flex-column justify-content-around align-items-center text-center"
           style="background: rgb(20, 20, 20); opacity: 85%;">
@@ -185,12 +165,12 @@
     </div>
 
     <!-- nosotras -->
-    <div class="container mb-4">
+    <div class="container mb-4 pb-5">
 
       <!-- titulo nosotras -->
       <div class="row" id="equipo">
         <div class="d-flex justify-content-around my-3 mx-2" style="align-items: center;">
-          <img height="50%" src="./assets/img/flecha.png" alt="">
+          <img height="50%" src="./assets/assets/img/flecha.png" alt="">
           <h1 class="text-white">NOSOTRAS</h1>
           <img height="50%" src="./assets/img/flechahaciaizquierda.png" alt="">
         </div>
@@ -247,20 +227,22 @@
 
       </div>
     </div>
+    <div class="space pb-5"></div>
   </div>
 
+  <?php
+  $footerRoutes = array(
+    'logoImgSrc' => './assets/img/logo_whiteLine.png'
+  );
+  include_once './partials/footer.php';
+  ?>
   <!-- footer -->
-  <div class="space"></div>
-  <footer class="mt-5">
-    <img src="img/logo_whiteLine.png">
-  </footer>
 
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
-  <script defer src="./script.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 </body>
 
 </html>
