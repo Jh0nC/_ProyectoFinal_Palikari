@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/img/logo_whiteLine.png" type="image/x-icon" />
   <title>Palikari</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -11,31 +12,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/navbar.css" />
+  <link rel="stylesheet" href="./assets/css/bottonStyle.css" />
 </head>
 
 <body>
+
+
 
   <div class="w-100 h-100 mask" id="inicio">
 
     <!-- navbar -->
     <?php
+
     $navbarRoutes = array(
       'logoImgSrc' => './assets/img/logo_whiteLine.png',
       'logo' => 'index.php',
-      'inicio' => '#inicio',
+      'inicio' => 'index.php',
       'comic' => '#comic',
       'equipo' => '#equipo',
       'tienda' => './pages/tienda.php',
       'iniciarSesion' => './pages/auth/login.php'
     );
+
     include_once './partials/navbar.php';
+
     ?>
 
     <!-- seection #1 -->
     <section id="section1" class="section active">
       <div class="inicio">
         <div class="scroll">
-          <p>Bienvenido a Palikari  </p>
+          <p>Bienvenido a Palikari </p>
           <p>Unete a este viaje</p>
         </div>
 
@@ -162,6 +170,99 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="row d-flex">
+      <!-- Button trigger modal -->
+      <div class="col-8 mx-auto d-flex align-items-end atenea-btn-box">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#ateneaModal" class="atenea-btn">
+          <img src="../assets/img/tienda/boton/atenea_boton.png" alt="" class="">
+          <div class="">
+            <span>Conoce a Atenea</span>
+            <i class="bi bi-caret-right"></i>
+          </div>
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="ateneaModal" tabindex="-1" aria-labelledby="ateneaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ateneaModalLabel">
+                Palikari
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      ¿Cuáles eran las habilidades distintivas
+                      de Atenea en la mitología griega?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex">
+                      <div>
+                        Atenea era conocida por su
+                        sabiduría, estrategia militar y
+                        habilidades en la guerra justa.
+                        También se le asociaba con la
+                        artesanía y las artes domésticas
+                      </div>
+                      <div>
+                        <img src="./img/pepito22.webp" alt="" width="200px" height="200px" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      ¿Cuál era el símbolo animal de Atenea y
+                      qué significado tenía?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      El búho era el símbolo animal de Atenea,
+                      representando la sabiduría y la
+                      inteligencia en la mitología griega
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      ¿Quiénes fueron los padres de Atenea?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Atenea no tuvo una madre en el sentido
+                      convencional. Según la mitología griega,
+                      surgió completamente armada de la cabeza
+                      de Zeus después de que este último
+                      sufriera un fuerte dolor de cabeza.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- nosotras -->

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Permanent+Marker&family=Tilt+Neon&display=swap");
 
+.test {
+	border: .2px solid #000;
+}
+
 *,
 *::after,
 *::before {
@@ -703,12 +707,6 @@ main {
 }
 
 /* other styles */
-
-
-
-.navbar {
-	z-index: 10001 !important;
-}
 
 .navbar-logo {
 	height: 70px;

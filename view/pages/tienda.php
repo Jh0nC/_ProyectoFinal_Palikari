@@ -3,54 +3,41 @@
 
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <link rel="shortcut icon" href="./../assets/img/logo_whiteLine.png" type="image/x-icon" />
+  <title>Palikari</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./tienda.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./../assets/css/tienda.css">
+  <link rel="stylesheet" href="./../assets/css/styles.css">
+  <link rel="stylesheet" href="./../assets/css/navbar.css">
+  <link rel="stylesheet" href="./../assets/css/bottonStyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-dark opacity-75 position-fixed top-0 w-100">
-    <div class="container-fluid">
-      <img class="mx-5 navbar-logo" src="./img/logo_whiteLine.png" alt=" Pelikari Logo" width="100" />
+  <!-- Navbar -->
+  <?php
 
-      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  $navbarRoutes = array(
+    'logoImgSrc' => './../assets/img/logo_whiteLine.png',
 
-      <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link fs-3 text-light" aria-current="page" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-3 text-light" aria-current="page" href="#equipo">Equipo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-3 link-light" aria-current="page" href="#comic">Comic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-3 link-light" aria-current="page" href="tienda.html">Tienda</a>
-          </li>
-        </ul>
+    'logo' => '../index.php',
+    'inicio' => '../index.php',
+    'comic' => '../index.php#comic',
+    'equipo' => '../index.php#equipo',
+    'tienda' => './../pages/tienda.php',
+    'iniciarSesion' => './../pages/auth/login.php'
+  );
 
-        <div class="me-5 d-flex gap-4">
-          <a class="text-light fs-4 text-decoration-none" href="#">
-            Iniciar sesión
-            <i class="bi bi-person-circle fs-4 ms-3 text-light"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  include_once './../partials/navbar.php';
+
+  ?>
 
   <main>
 
@@ -58,7 +45,7 @@
       <div class="slide">
         <div class="slide__wrap">
           <div class="slide__img">
-            <img src="./materialPagina/imagenes/camisa_promocion.jpg" alt="">
+            <img src="./../assets/img/tienda/camisa_promocion.jpg" alt="">
           </div>
           <div class="slide__title-wrap">
             <h3 class="slide__title">Camisas</h3>
@@ -69,7 +56,7 @@
       <div class="slide">
         <div class="slide__wrap">
           <div class="slide__img">
-            <img src="./materialPagina/imagenes/libro_promocion.jpg" alt="">
+            <img src="./../assets/img/tienda/libro_promocion.jpg" alt="">
           </div>
           <div class="slide__title-wrap">
             <h3 class="slide__title">Libros</h3>
@@ -80,7 +67,7 @@
       <div class="slide">
         <div class="slide__wrap">
           <div class="slide__img">
-            <img src="./materialPagina/imagenes/vaso_promocion.jpg" alt="">
+            <img src="./../assets/img/tienda/vaso_promocion.jpg" alt="">
           </div>
           <div class="slide__title-wrap">
             <h3 class="slide__title">Mugs</h3>
@@ -111,7 +98,7 @@
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
-            <img src="./materialPagina/imagenes/camisa_promocion.jpg" alt="Some image" />
+            <img src="./../assets/img/tienda/camisa_promocion.jpg" alt="Some image" />
           </div>
         </div>
         <div class="details__item details__item-sizes">
@@ -154,7 +141,7 @@
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
-            <img src="./materialPagina/imagenes/libro_promocion.jpg" alt="Some image" />
+            <img src="./../assets/img/tienda/libro_promocion.jpg" alt="Some image" />
           </div>
         </div>
         <div class="details__item details__item-sizes">
@@ -197,7 +184,7 @@
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
-            <img src="./materialPagina/imagenes/vaso_promocion.jpg" alt="Some image" />
+            <img src="./../assets/img/tienda/vaso_promocion.jpg" alt="Some image" />
           </div>
         </div>
         <div class="details__item details__item-sizes">
@@ -241,8 +228,10 @@
   </main>
 
   <div class="container-fluid mt-5">
-    <div class="row px-5">
-      <div class="col-sm-4 p-3">
+
+    <div class="row px-5" id="lista-productos">
+
+      <!-- <div class="col-sm-4 p-3">
         <div class="bg-dark card rounded-3 opacity-75">
           <div class="card-head">
             <h3 class="text-light ms-5">
@@ -251,7 +240,7 @@
           </div>
           <div class="card-body d-block">
             <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/atras_camisa_atenea.png" alt="">
+              <img src="./../assets/img/tienda/Camisas/atras_camisa_atenea.png" alt="">
             </div>
             <b class="text-light d-block mx-2">Detalles del producto:</b>
             <div class="list-unstyled text-light ms-4">
@@ -269,351 +258,16 @@
             </button>
           </div>
         </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/atras_camisa_perseo.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/atras_camisa_poseidon.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/camisasjuntas_atenea.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/camisasjuntas_perseo.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/camisasjuntas_poseidon.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Camisas/camisasjuntas_poseidon.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Mugs/mugfinalGorgonas_Mesa de trabajo 1-01.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Mugs/mugfinalGorgonas_Mesa de trabajo 1-02.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Mugs/mugfinalGorgonas_Mesa de trabajo 1-03.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Mugs/mugfinalMedusa_Mesa de trabajo 1-01.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Mugs/mugfinalMedusa_Mesa de trabajo 1-02.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./materialPagina/imagenes/Mugs/mugfinalMedusa_Mesa de trabajo 1-03.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div>
+      </div> -->
 
     </div>
+
   </div>
 
   <!-- footer -->
   <div class="space"></div>
   <footer class="mt-5">
-    <img src="img/logo_whiteLine.png">
+    <img src="../assets/img/logo_whiteLine.png">
   </footer>
 
   <!-- partial -->
@@ -622,7 +276,8 @@
   <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script>
   <script src='https://assets.codepen.io/16327/gsap-latest-beta.min.js'></script>
   <script src='https://assets.codepen.io/16327/Observer.min.js'></script>
-  <script src=".//tienda.js"></script>
+  <script src="../assets/js/tienda.js"></script>
+  <script src="../assets/js/carrito.js"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

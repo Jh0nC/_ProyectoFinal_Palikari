@@ -1,5 +1,6 @@
 <?php
-require_once '../model/Model.php';
+// require_once '../model/Model.php';
+require_once "C:\\laragon\\www\\_ProyectoFinal_Palikari\\model\\Model.php";
 
 class userController
 {
@@ -50,6 +51,6 @@ class userController
         session_start();
         $_SESSION = array();
         session_destroy();
-        header('Location: page.php');
+        header('Location: index.php');
     }
 }
