@@ -3,14 +3,14 @@ const products = [
     "id": 101,
     "name": "Camisa",
     "imagen": "./../assets/img/tienda/Camisas/camisasjuntas_atenea.png",
-    "details": ["Detalle 1", "Detalle 2", "Detalle 3"],
+    "details": ["Algodón", "Nilon", "Fibras de oro"],
     "price": 12000
   },
   {
     "id": 201,
     "name": "Mug",
     "imagen": "./../assets/img/tienda/Mugs/mugfinalGorgonas_Mesa de trabajo 1-03.png",
-    "details": ["Detalle 4", "Detalle 5"],
+    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
     "price": 7000
   },
 ];
@@ -48,7 +48,7 @@ function renderProducts() {
             </div>
           </div>
           <div class="card-footer d-flex justify-content-around align-items-center">
-            <span>${product.price}</span>
+            <h4 class="text-light">$ ${product.price}</h4>
             <button class="btn btn-info" data-product-id="${product.id}">
               Agregar al carrito
             </button>
@@ -57,6 +57,7 @@ function renderProducts() {
       </div>`
   }
   )
+
   // Agregar evento de clic al botón "Agregar al carrito"
   const addToCartButtons = document.querySelectorAll('[data-product-id]');
   addToCartButtons.forEach((button) => {
@@ -65,6 +66,7 @@ function renderProducts() {
       addToCart(productId);
     });
   });
+
 };
 
 
@@ -72,7 +74,14 @@ function renderProducts() {
 function addToCart(productId) {
   const productToAdd = products.find((product) => product.id === productId);
   if (productToAdd) {
-    cart.push(productToAdd);
+    const existingCartItem = cart.find((item) => item.id === productId);
+    if (existingCartItem) {
+      // Si el producto ya está en el carrito, incrementamos su cantidad
+      existingCartItem.quantity += 1;
+    } else {
+      // Si es un producto nuevo, lo agregamos al carrito con cantidad 1
+      cart.push({ ...productToAdd, quantity: 1 });
+    }
     console.log('Producto agregado al carrito:', productToAdd);
     console.log('Carrito:', cart);
     console.log('Total:', calculateTotal());
@@ -82,7 +91,7 @@ function addToCart(productId) {
 }
 
 function calculateTotal() {
-  const total = cart.reduce((acc, product) => acc + product.price, 0);
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
   return total;
 }
 

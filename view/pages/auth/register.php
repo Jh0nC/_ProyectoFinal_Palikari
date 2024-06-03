@@ -9,7 +9,7 @@ require_once '../../../controller/userController.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Palikari</title>
-  <link rel="shortcut icon" href="../../assets/img/web_log.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../../assets/img/logo_whiteLine.png" type="image/x-icon" />
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,12 +19,31 @@ require_once '../../../controller/userController.php';
 
   <!-- styles css -->
   <link rel="stylesheet" href="../../assets/css/loginStyle.css" />
+  <link rel="stylesheet" href="../../assets/css/navbar.css" />
+
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
 <body>
+
+  <?php
+
+  $navbarRoutes = array(
+    'logoImgSrc' => './../../assets/img/logo_whiteLine.png',
+
+    'logo' => '../../index.php',
+    'inicio' => '../../index.php',
+    'comic' => '../../index.php#comic',
+    'equipo' => '../../index.php#equipo',
+    'tienda' => './../../pages/tienda.php',
+    'iniciarSesion' => './../../pages/auth/login.php'
+  );
+
+  include_once './../../partials/navbar.php';
+
+  ?>
 
   <img src="../../assets/img/templo.png" alt="" class="img-fondo">
 

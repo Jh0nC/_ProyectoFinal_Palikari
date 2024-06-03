@@ -1,5 +1,7 @@
 <?php
 
+require_once '../model/productModel.php';
+
 class productController
 {
     public static function addProduct($data)

@@ -13,24 +13,45 @@
     <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fs-3 text-light" aria-current="page" href="<?php echo $navbarRoutes['inicio'] ?>">Inicio</a>
+          <a class="nav-link fs-3 text-light" aria-current="page"
+            href="<?php echo $navbarRoutes['inicio'] ?>">Inicio</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link fs-3 link-light" aria-current="page" href="<?php echo $navbarRoutes['comic'] ?>">Comic</a>
+          <a class="nav-link fs-3 link-light" aria-current="page" href="<?php echo $navbarRoutes['comic'] ?>">Comic</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 text-light" aria-current="page" href="<?php echo $navbarRoutes['equipo'] ?>">Equipo</a>
+          <a class="nav-link fs-3 text-light" aria-current="page"
+            href="<?php echo $navbarRoutes['equipo'] ?>">Equipo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 link-light" aria-current="page" href="<?php echo $navbarRoutes['tienda'] ?>">Tienda</a>
+          <?php
+          if (isset($_SESSION['name'])) {
+            echo '<a class="nav-link fs-3 link-light" aria-current="page" href="'.$navbarRoutes['tienda'] .'">Tienda</a>';
+          } else {
+            echo '<a class="nav-link fs-3 link-light" aria-current="page" href="'.$navbarRoutes['iniciarSesion'] .'">Tienda</a>';
+          }
+          ?>
         </li>
       </ul>
 
       <div class="me-5 d-flex gap-4">
-        <a class="text-light fs-4 text-decoration-none" href="<?php echo $navbarRoutes['iniciarSesion'] ?>">
+
+        <?php
+        if (isset($_SESSION['name'])) {
+          echo '
+        <span class="text-light fs-4 text-decoration-none">
+          ' . $_SESSION['name'] . '
+          <i class="bi bi-person-circle fs-4 ms-3 text-light"></i>
+        </span>';
+        } else {
+          echo '
+        <a class="text-light fs-4 text-decoration-none" href=' . $navbarRoutes["iniciarSesion"] . '>
           Iniciar sesión
           <i class="bi bi-person-circle fs-4 ms-3 text-light"></i>
-        </a>
+        </a>';
+        }
+        ?>
+
       </div>
     </div>
   </div>

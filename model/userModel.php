@@ -1,6 +1,6 @@
 <?php
 require_once 'db/Config.php';
-class Model
+class userModel
 {
 
   public static function modelUserLogIn($data)

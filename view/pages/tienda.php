@@ -1,3 +1,8 @@
+<?php 
+  if (!isset($_SESSION['name'])) {
+    header('Location: ../index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,10 +21,11 @@
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-
 </head>
 
 <body>
+
+  <div class="shop-cart"></div>
 
   <!-- Navbar -->
   <?php
@@ -230,35 +236,6 @@
   <div class="container-fluid mt-5">
 
     <div class="row px-5" id="lista-productos">
-
-      <!-- <div class="col-sm-4 p-3">
-        <div class="bg-dark card rounded-3 opacity-75">
-          <div class="card-head">
-            <h3 class="text-light ms-5">
-              Producto
-            </h3>
-          </div>
-          <div class="card-body d-block">
-            <div class="card-img">
-              <img src="./../assets/img/tienda/Camisas/atras_camisa_atenea.png" alt="">
-            </div>
-            <b class="text-light d-block mx-2">Detalles del producto:</b>
-            <div class="list-unstyled text-light ms-4">
-              <li>Detalle 1</li>
-              <li>Detalle 2</li>
-              <li>Detalle 3</li>
-            </div>
-          </div>
-          <div class="card-footer d-flex justify-content-around align-items-center">
-            <button class="btn btn-warning">
-              Saber mas
-            </button>
-            <button class="btn btn-info">
-              Agregar al carrito
-            </button>
-          </div>
-        </div>
-      </div> -->
 
     </div>
 

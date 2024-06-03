@@ -1,6 +1,6 @@
 <?php
-// require_once '../model/Model.php';
-require_once "C:\\laragon\\www\\_ProyectoFinal_Palikari\\model\\Model.php";
+// require_once '../model/userModel.php';
+require_once "C:\\laragon\\www\\_ProyectoFinal_Palikari\\model\\userModel.php";
 
 class userController
 {
@@ -13,12 +13,11 @@ class userController
                 'password' => $_POST['password']
             );
 
-            $validationBD = Model::modelUserLogIn($data);
+            $validationBD = userModel::modelUserLogIn($data);
 
             if ($validationBD['boolResponse']) {
-                header('Location: ../../tienda.php');
+                header('Location: ../../../index.php');
             }
-
             else {
                 echo $validationBD['response'];
             }
@@ -38,7 +37,7 @@ class userController
                 'password_confirm' => $_POST['password_confirm']
             );
 
-            $validationBD = Model::modelUserLogup($data);
+            $validationBD = userModel::modelUserLogup($data);
 
             if ($validationBD['boolResponse']) {
                 header('Location: login.php');

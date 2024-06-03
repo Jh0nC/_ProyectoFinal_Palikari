@@ -991,3 +991,16 @@ footer {
 footer img {
 	width: 180px;
 }
+
+/* carrito de compras */
+
+.shop-cart {
+	z-index: 15000 !important;
+	position: fixed;
+	bottom: 30px;
+	right: 50px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: .2px solid #000;
+}
