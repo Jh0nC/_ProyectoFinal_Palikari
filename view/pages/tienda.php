@@ -1,8 +1,10 @@
-<?php 
-  if (!isset($_SESSION['name'])) {
-    header('Location: ../index.php');
-  }
+<?php
+session_start();
+if (!isset($_SESSION['name'])) {
+  header('Location: ../index.php');
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,12 +22,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-
 </head>
 
 <body>
 
-  <div class="shop-cart"></div>
+  <button class="shop-cart-btn btn btn-warning pt-2" type="button" data-bs-toggle="modal" data-bs-target="#shopCart">
+    <h3><i class="bi bi-cart4 text-dark"></i></h3>
+  </button>
+
+  <div id="shop-cart">
+  </div>
 
   <!-- Navbar -->
   <?php
@@ -51,7 +57,7 @@
       <div class="slide">
         <div class="slide__wrap">
           <div class="slide__img">
-            <img src="./../assets/img/tienda/camisa_promocion.jpg" alt="">
+            <img src="./../assets/img/tienda/camisa.png" alt="">
           </div>
           <div class="slide__title-wrap">
             <h3 class="slide__title">Camisas</h3>
@@ -62,7 +68,7 @@
       <div class="slide">
         <div class="slide__wrap">
           <div class="slide__img">
-            <img src="./../assets/img/tienda/libro_promocion.jpg" alt="">
+            <img src="./../assets/img/tienda/libro.png" alt="">
           </div>
           <div class="slide__title-wrap">
             <h3 class="slide__title">Libros</h3>
@@ -73,7 +79,7 @@
       <div class="slide">
         <div class="slide__wrap">
           <div class="slide__img">
-            <img src="./../assets/img/tienda/vaso_promocion.jpg" alt="">
+            <img src="./../assets/img/tienda/vaso.png" alt="">
           </div>
           <div class="slide__title-wrap">
             <h3 class="slide__title">Mugs</h3>
@@ -84,27 +90,24 @@
     </div><!-- /slideshow -->
     <nav class="boxnav">
       <button class="boxnav__item boxnav__item--prev">
-        <svg class="icon icon--caret">
-          <use xlink:href="#icon-caret"></use>
-        </svg>
+        <i class="bi bi-chevron-left"></i>
       </button>
       <div class="boxnav__item boxnav__item--label">
         <span class="boxnav__label boxnav__label--current">1</span>
         <span class="boxnav__label boxnav__label--total"></span>
       </div>
       <button class="boxnav__item boxnav__item--next">
-        <svg class="icon icon--caret-rot">
-          <use xlink:href="#icon-caret"></use>
-        </svg>
+        <i class="bi bi-chevron-right"></i>
       </button>
     </nav>
+
     <button class="action action--details">+ detalles</button>
     <!-- details -->
     <div class="details-wrap">
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
-            <img src="./../assets/img/tienda/camisa_promocion.jpg" alt="Some image" />
+            <img src="./../assets/img/tienda/camisa.png" alt="Some image" />
           </div>
         </div>
         <div class="details__item details__item-sizes">
@@ -147,7 +150,7 @@
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
-            <img src="./../assets/img/tienda/libro_promocion.jpg" alt="Some image" />
+            <img src="./../assets/img/tienda/libro.png" alt="Some image" />
           </div>
         </div>
         <div class="details__item details__item-sizes">
@@ -190,7 +193,7 @@
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
-            <img src="./../assets/img/tienda/vaso_promocion.jpg" alt="Some image" />
+            <img src="./../assets/img/tienda/vaso.png" alt="Some image" />
           </div>
         </div>
         <div class="details__item details__item-sizes">

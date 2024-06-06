@@ -4,6 +4,11 @@ require_once "C:\\laragon\\www\\_ProyectoFinal_Palikari\\model\\userModel.php";
 
 class userController
 {
+    public static function getUsers() {
+        $users = userModel::modelGetUsers();
+        return $users;
+    }
+
     public static function userLogin()
     {
         if (isset($_POST['mail'], $_POST['password'])) {

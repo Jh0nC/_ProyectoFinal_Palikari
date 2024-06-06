@@ -191,7 +191,7 @@ main {
 }
 
 .slide__img img {
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
 
@@ -955,26 +955,33 @@ main {
 	width: auto;
 	overflow: hidden;
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-	box-shadow: inset 0 1px 10px #000;
+	/* box-shadow: inset 0 1px 10px #00000044; */
 }
 
 .card-img img {
-	height: 100%;
+	position: absolute;
+	height: 80%;
 	width: auto;
+}
+
+.back-card-img {
+	z-index: 1;
+}
+
+.front-card-img {
 	transition-duration: .3s;
+	z-index: 2;
+	opacity: 100%;
 }
 
-.card-img img:hover {
-	transform: scale(1.03);
+.front-card-img:hover {
+	opacity: 0%;
 }
-
-
-
 
 /* footer */
-
 .space {
 	height: 100px;
 }
@@ -992,15 +999,32 @@ footer img {
 	width: 180px;
 }
 
-/* carrito de compras */
 
-.shop-cart {
+/* boton shop cart */
+.shop-cart-btn {
 	z-index: 15000 !important;
 	position: fixed;
 	bottom: 30px;
 	right: 50px;
 	width: 60px;
 	height: 60px;
-	border-radius: 50%;
-	border: .2px solid #000;
+	border-radius: 50% !important;
+}
+
+/* modal shopcart */
+.modal-body-shop-cart {
+	max-height: 50vh !important;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.modal-product-img {
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+}
+
+.modal-product-img img {
+	height: 90%;
+	width: auto;
 }

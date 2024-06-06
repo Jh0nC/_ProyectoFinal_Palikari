@@ -2,6 +2,12 @@
 require_once 'db/Config.php';
 class userModel
 {
+  public static function modelGetUsers() {
+    $consultDB = connectionDatabase::UseConnectionDatabase()->prepare('select * from users');
+    $consultDB->execute();
+    $result = $consultDB->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+  }
 
   public static function modelUserLogIn($data)
   {
@@ -30,7 +36,7 @@ class userModel
         $responseBD = 'credenciales_correctas';
 
         session_start();
-        $_SESSION['name'] = $user['user_name'];
+        $_SESSION['name'] = $user['user_name'].' '.$user['user_last_name'];
         $_SESSION['mail'] = $user['user_mail'];
 
         return array(

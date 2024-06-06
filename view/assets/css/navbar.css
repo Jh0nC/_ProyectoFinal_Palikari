@@ -1,3 +1,8 @@
 .navbar {
   z-index: 13000 !important;
 }
+
+.navbar-logo-img {
+  width: 100px;
+  height: 80px;
+}

@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,8 +134,12 @@
 
     <!-- buttons -->
     <nav class="bottom-nav">
-      <button onclick="prevSection()" class="btn btn-warning">Anterior</button>
-      <button onclick="nextSection()" class="btn btn-warning">Siguiente</button>
+      <button onclick="prevSection()" class="btn btn-warning">
+        <i class="bi bi-chevron-double-left"></i>
+      </button>
+      <button onclick="nextSection()" class="btn btn-warning">
+        <i class="bi bi-chevron-double-right"></i>
+      </button>
     </nav>
   </div>
 
@@ -176,7 +181,7 @@
       <!-- Button trigger modal -->
       <div class="col-8 mx-auto d-flex align-items-end atenea-btn-box">
         <button type="button" data-bs-toggle="modal" data-bs-target="#ateneaModal" class="atenea-btn">
-          <img src="../assets/img/tienda/boton/atenea_boton.png" alt="" class="">
+          <img src="./assets/img/tienda/boton/atenea_boton.png" alt="" class="">
           <div class="">
             <span>Conoce a Atenea</span>
             <i class="bi bi-caret-right"></i>

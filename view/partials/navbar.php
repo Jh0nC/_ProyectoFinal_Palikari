@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-dark opacity-75 position-fixed top-0 w-100">
   <div class="container-fluid">
     <a href=" <?php echo $navbarRoutes['logo'] ?> ">
-      <img class="mx-5" src=" <?php echo $navbarRoutes['logoImgSrc'] ?> " alt="LogoPalikari" width="100" />
+      <img class="mx-5 navbar-logo-img" src=" <?php echo $navbarRoutes['logoImgSrc'] ?> " alt="LogoPalikari" />
     </a>
 
     <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
