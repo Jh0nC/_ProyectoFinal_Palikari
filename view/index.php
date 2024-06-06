@@ -49,18 +49,23 @@
 
         <img src="./assets/img/atn_levantando_lanza_2.gif" alt="" class="img-atenea" />
         <div class="inicio-content bg-dark p-3 rounded-4 opacity-75 shadow-lg mt-5">
-          <h1>
+          <h1 class="section1-text title-font-1">
             PALIKARI
-            <ion-icon class="music-note-icon" name="musical-note-outline"></ion-icon>
           </h1>
-          <p class="fw-light">
-            Atenea es la diosa griega de la sabiduría, la estrategia y la guerra
-            justa, hija de Zeus. Nació completamente armada de la cabeza de su
-            padre. Es símbolo de inteligencia y justicia, y se la representa con
-            lanza y escudo. Patrona de las artes y la civilización, se le
-            atribuyen invenciones como la brida y el arado. Jugó un papel clave
-            en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
+          <p class="fw-light section1-text">
+            Atenea es la diosa griega de la sabiduría, la estrategia y la guerra justa, hija de Zeus. Nació completamente armada de la cabeza de su padre. Es símbolo de inteligencia y justicia, y se la representa con lanza y escudo. Patrona de las artes y la civilización, se le atribuyen invenciones como la brida y el arado. Jugó un papel clave en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
           </p>
+          <div class="collapse-section1-text">         
+            <div class="collapse" id="collapse-section1-text">
+              <h1 class="title-font-1">
+                PALIKARI
+              </h1>
+              Atenea es la diosa griega de la sabiduría, la estrategia y la guerra justa, hija de Zeus. Nació completamente armada de la cabeza de su padre. Es símbolo de inteligencia y justicia, y se la representa con lanza y escudo. Patrona de las artes y la civilización, se le atribuyen invenciones como la brida y el arado. Jugó un papel clave en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
+            </div>
+            <a class="text-light" data-bs-toggle="collapse" href="#collapse-section1-text" role="button" aria-expanded="false" aria-controls="collapse-section1-text" >
+              Conoce a Atenea... <i class="bi bi-chevron-expand"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -107,18 +112,23 @@
     <!-- section #3 -->
     <section id="section3" class="section">
       <div class="w-100 h-100 about-page bg-secondary">
-        <div class="bg info">
+        <div class="info">
           <img src="./assets/img/iconos_personajes/todes.png" alt="" />
           <div class="info-content">
-            <h1>Comic info</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus quas totam odit alias ullam
-              perspiciatis? Qui distinctio error, ipsa odit ipsum expedita nostrum earum maxime eligendi ab consequuntur
-              laboriosam, ratione sed molestias hic veniam adipisci quia incidunt modi minus sunt. Unde quam mollitia,
-              expedita vitae odit iste repudiandae dignissimos molestias, perspiciatis a quasi, at praesentium
-              architecto
-              hic nobis delectus in quos ex sed voluptate sunt impedit quo. Repudiandae, reprehenderit.
-            </p>
+            <div class="normal-info-content">
+              <h1>Comic info</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus quas totam odit alias ullam perspiciatis? Qui distinctio error, ipsa odit ipsum expedita nostrum earum maxime eligendi ab consequuntur laboriosam, ratione sed molestias hic veniam adipisci quia incidunt modi minus sunt. Unde quam mollitia, expedita vitae odit iste repudiandae dignissimos molestias, perspiciatis a quasi, at praesentium architecto hic nobis delectus in quos ex sed voluptate sunt impedit quo. Repudiandae, reprehenderit.
+              </p>
+            </div>
+            <div class="info-content-collapse">
+            <div class="collapse" id="collapseExample">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+            <a class="text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Comic info <i class="bi bi-chevron-expand"></i>
+            </a>
+            </div>
           </div>
         </div>
       </div>

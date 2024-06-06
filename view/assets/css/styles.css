@@ -25,6 +25,14 @@ h2 {
   margin-bottom: 20px;
 }
 
+.title-font-1 {
+  font-family: "Nunito", sans-serif;
+  font-family: inherit;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .mask {
   z-index: 10;
   position: relative;
@@ -58,6 +66,10 @@ h2 {
   background-position-x: center;
 }
 
+.collapse-section1-text {
+  display: none;
+}
+
 #section2 {
   background-image: url('../img/red-orng-gradient.jpg');
   background-repeat: no-repeat;
@@ -77,17 +89,9 @@ h2 {
 .inicio-content {
   position: absolute;
   left: 7%;
-  font-family: "Nunito", sans-serif;
   width: min(600px, 100%);
   color: #fff;
   z-index: 5;
-}
-
-.inicio-content>h1 {
-  font-family: inherit;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .music-note-icon {
@@ -193,16 +197,6 @@ h2 {
   margin-top: 80px;
 }
 
-.bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-}
-
 .info {
   padding-top: 120px;
   display: flex;
@@ -211,7 +205,7 @@ h2 {
   justify-content: center;
   gap: 150px;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   font-family: "Nunito", sans-serif;
   background-image: linear-gradient(45deg,
       #801424 0%,
@@ -237,6 +231,10 @@ h2 {
   width: min(500px, 100%);
   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
     0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.info-content-collapse {
+  display: none;
 }
 
 .info-content h1 {
@@ -441,14 +439,16 @@ h2 {
 
 @media screen and (max-width: 400px) {
   .inicio-content {
-    position: static;
-    margin: 0 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
   }
 
   .inicio>img {
-    z-index: 7;
-    bottom: -15%;
-    width: 80% !important;
+    bottom: 0%;
+    left: -55%;
+    width: 160% !important;
   }
 
   .scroll {
@@ -464,21 +464,35 @@ h2 {
     display: none;
   }
 
+  .section1-text {
+    display: none;
+  }
+
+  .collapse-section1-text {
+    display: block;
+  }
+
   .swiper {
     margin-top: 20% !important;
+  }
+
+  .normal-info-content {
+    display: none;
   }
 
   .info {
     position: relative;
   }
 
-  .info img {
-    display: none;
+  .info-content {
+    position: absolute;
+    padding: 20px;
+    bottom: 10%;
+    width: 90%;
   }
 
-  .info-content {
-    padding: 0 !important;
-    margin: 0 20px;
+  .info-content-collapse {
+    display: block;
   }
 
   .comic {
