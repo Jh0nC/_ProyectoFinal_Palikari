@@ -37,3 +37,13 @@
 .atenea-btn:hover {
 	transform: scale(1.05);
 }
+
+@media screen and (max-width: 400px) {
+	.atenea-btn-box {
+		margin-top: 40px !important;
+	}
+
+	.atenea-btn-text {
+		display: none !important;
+	}
+}

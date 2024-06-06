@@ -193,10 +193,6 @@ h2 {
   margin-top: 80px;
 }
 
-.about-page {
-  background: url();
-}
-
 .bg {
   display: flex;
   align-items: center;
@@ -267,6 +263,10 @@ h2 {
 
 /* comic */
 
+.comic-title h2 {
+  font-size: 4em;
+}
+
 .second-prom-panel {
   height: 50vh;
 
@@ -284,7 +284,6 @@ h2 {
 /* nosotras */
 .boxesContainer {
   display: flex;
-  height: 300px;
 }
 
 .line {
@@ -337,10 +336,6 @@ h2 {
   animation: giro 1s 1;
 }
 
-.card p {
-  margin-bottom: 1.8em;
-}
-
 .card .front,
 .card .back {
   backface-visibility: hidden;
@@ -372,11 +367,14 @@ h2 {
   background: #fff;
   color: #333;
   text-shadow: 0 0 1px #333;
-
 }
 
 .cardBox1:nth-child(1) .card .back {
   background: rgb(228, 76, 76);
+}
+
+.cardBox1 .line {
+  background: crimson;
 }
 
 .cardBox2:nth-child(2) .card .back {
@@ -438,6 +436,78 @@ h2 {
 
   .card {
     height: 260px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .inicio-content {
+    position: static;
+    margin: 0 20px;
+  }
+
+  .inicio>img {
+    z-index: 7;
+    bottom: -15%;
+    width: 80% !important;
+  }
+
+  .scroll {
+    top: 34% !important;
+    width: 130% !important;
+  }
+
+  .scroll p {
+    font-size: 3rem !important;
+  }
+
+  .scroll p:nth-child(2) {
+    display: none;
+  }
+
+  .swiper {
+    margin-top: 20% !important;
+  }
+
+  .info {
+    position: relative;
+  }
+
+  .info img {
+    display: none;
+  }
+
+  .info-content {
+    padding: 0 !important;
+    margin: 0 20px;
+  }
+
+  .comic {
+    height: fit-content !important;
+  }
+
+  #comic {
+    padding: 0 !important;
+  }
+
+  .comic-title h2 {
+    margin-top: 30px;
+    width: 100% !important;
+  }
+
+  .second-prom-panel {
+    height: fit-content !important;
+  }
+
+  .card {
+    height: 280px !important;
+  }
+
+  .back p {
+    font-size: 1rem;
+  }
+
+  .back br {
+    display: none;
   }
 }
 

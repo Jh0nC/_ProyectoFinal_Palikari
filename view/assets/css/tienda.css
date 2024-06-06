@@ -10,11 +10,7 @@
 	box-sizing: border-box;
 }
 
-html {
-	background: #fff;
-}
-
-body {
+body, html {
 	--color-text: #000;
 	--color-bg: #fff;
 	--color-link: #000;
@@ -32,6 +28,11 @@ body {
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 button,
@@ -708,10 +709,6 @@ main {
 
 /* other styles */
 
-.navbar-logo {
-	height: 70px;
-	width: auto;
-}
 
 .slide-content {
 	display: flex;

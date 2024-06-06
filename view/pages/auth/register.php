@@ -90,7 +90,7 @@ require_once '../../../controller/userController.php';
           ?>
 
           <div>
-            <button type="submit">Registrarse</button>
+            <button class="btn-login" type="submit">Registrarse</button>
           </div>
 
           <div class="register">

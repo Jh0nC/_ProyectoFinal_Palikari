@@ -10,7 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/navbar.css" />
@@ -120,13 +119,6 @@
               architecto
               hic nobis delectus in quos ex sed voluptate sunt impedit quo. Repudiandae, reprehenderit.
             </p>
-            <div class="tag-container">
-              <!-- <span>Timeless Hits</span>
-              <span>Selected Playlists</span>
-              <span>Remember & Discover</span>
-              <span>Offline Enjoyment</span>
-              <span>Ad-Free Nostalgia</span> -->
-            </div>
           </div>
         </div>
       </div>
@@ -148,8 +140,8 @@
 
       <!-- comic title -->
       <div class="row">
-        <div class="d-flex justify-content-center my-2 mx-2">
-          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3" style="font-size: 4em">
+        <div class="d-flex justify-content-center my-2 mx-2 comic-title">
+          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3" >
             COMIC
           </h2>
         </div>
@@ -182,7 +174,7 @@
       <div class="col-8 mx-auto d-flex align-items-end atenea-btn-box">
         <button type="button" data-bs-toggle="modal" data-bs-target="#ateneaModal" class="atenea-btn">
           <img src="./assets/img/tienda/boton/atenea_boton.png" alt="" class="">
-          <div class="">
+          <div class="atenea-btn-text">
             <span>Conoce a Atenea</span>
             <i class="bi bi-caret-right"></i>
           </div>
@@ -271,25 +263,25 @@
     </div>
 
     <!-- nosotras -->
-    <div class="container mb-4 pb-5">
+    <div class="container-fluid">
 
       <!-- titulo nosotras -->
-      <div class="row" id="equipo">
-        <div class="d-flex justify-content-around my-3 mx-2" style="align-items: center;">
-          <img height="50%" src="./assets/assets/img/flecha.png" alt="">
-          <h1 class="text-white">NOSOTRAS</h1>
-          <img height="50%" src="./assets/img/flechahaciaizquierda.png" alt="">
+      <div class="row">
+        <div class="d-flex justify-content-center my-2 mx-2 comic-title">
+          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3" >
+            NOSOTRAS
+          </h2>
         </div>
       </div>
 
-      <div class="boxesContainer row justify-content-around mb-5">
+      <div class="boxesContainer row justify-content-around">
 
         <div class="cardBox1 col-5 m-2 p-4">
           <div class="card">
             <div class="front">
-              <h1 class="titulo">Carolina Muñoz</h1>
-              <hr class="line" style="background: crimson;">
-              <H6>DISEÑADORA</H6>
+              <h1 class="titulo-nosotras">Carolina Muñoz</h1>
+              <hr class="line">
+              <h6>DISEÑADORA</h6>
             </div>
             <div class="back">
               <h2>DISEÑADORA</h2>
@@ -333,7 +325,7 @@
 
       </div>
     </div>
-    <div class="space pb-5"></div>
+    <!-- <div class="space pb-5"></div> -->
   </div>
 
   <?php
