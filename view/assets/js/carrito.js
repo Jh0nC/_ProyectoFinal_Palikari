@@ -6,7 +6,7 @@ const products = [
     "backimage": "../assets/img/camisas/atrasatenea.png",
     "modalimage": "../assets/img/camisas/juntasatenea.png",
     "details": ["Algodón", "Nilon", "Fibras de oro"],
-    "price": 11000
+    "price": 110.000
   },
   {
     "id": 102,
@@ -15,7 +15,7 @@ const products = [
     "backimage": "../assets/img/camisas/atrasmedusa.png",
     "modalimage": "../assets/img/camisas/juntasmedusa.png",
     "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
-    "price": 11000
+    "price": 110.000
   },
   {
     "id": 103,
@@ -23,8 +23,8 @@ const products = [
     "frontimagen": "../assets/img/camisas/adelanteperseo.png",
     "backimage": "../assets/img/camisas/perseoatras.png",
     "modalimage": "../assets/img/camisas/juntasperseo.png",
-    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
-    "price": 11000
+    "details": ["Hilo de seda", "Tinta de mar", "Almas de personas"],
+    "price": 110.000
   },
   {
     "id": 104,
@@ -33,8 +33,54 @@ const products = [
     "backimage": "../assets/img/camisas/atrasposeidon.png",
     "modalimage": "../assets/img/camisas/juntasposeidon.png",
     "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
+    "price": 110.000
+  },
+  {
+    "id": 201,
+    "name": "Mug Atenea",
+    "frontimagen": "../assets/img/tienda/vasos/vasoatenea1.png",
+    "backimage": "../assets/img/tienda/vasos/vasoatenea2.png",
+    "modalimage": "../assets/img/tienda/vasos/vasosatenea.png",
+    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
+    "price": 45.000
+  },
+  {
+    "id": 202,
+    "name": "Mug Poseidon",
+    "frontimagen": "../assets/img/tienda/vasos/vasoposeidon1.png",
+    "backimage": "../assets/img/tienda/vasos/vasoposeidon2.png",
+    "modalimage": "../assets/img/tienda/vasos/vasosposeidon.png",
+    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
+    "price": 45.000
+  },
+  {
+    "id": 203,
+    "name": "Mug Perseo",
+    "frontimagen": "../assets/img/tienda/vasos/vasoperseo1.png",
+    "backimage": "../assets/img/tienda/vasos/vasoperseo2.png",
+    "modalimage": "../assets/img/tienda/vasos/vasosperse.png",
+    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
+    "price": 45.000
+  },
+  {
+    "id": 204,
+    "name": "Mug Medusa",
+    "frontimagen": "../assets/img/tienda/vasos/vasomedusa1.png",
+    "backimage": "../assets/img/tienda/vasos/vasomedusa2.png",
+    "modalimage": "../assets/img/tienda/vasos/vasosmedusa.png",
+    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
+    "price": 45.000
+  },
+  {
+    "id": 205,
+    "name": "Libro Atenea",
+    "frontimagen": "../assets/img/tienda/libro/librofrente.png",
+    "backimage": "../assets/img/tienda/libro/libroatras.png",
+    "modalimage": "../assets/img/tienda/libro/librosunidos.png",
+    "details": ["Porcelana fina", "Tinta de mar", "Almas de personas"],
     "price": 11000
   },
+  
 ];
 
 function renderDetails(details) {

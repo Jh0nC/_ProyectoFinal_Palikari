@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./assets/img/logo_whiteLine.png" type="image/x-icon" />
   <title>Palikari</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -17,8 +16,6 @@
 </head>
 
 <body>
-
-
 
   <div class="w-100 h-100 mask" id="inicio">
 
@@ -53,16 +50,23 @@
             PALIKARI
           </h1>
           <p class="fw-light section1-text">
-            Atenea es la diosa griega de la sabiduría, la estrategia y la guerra justa, hija de Zeus. Nació completamente armada de la cabeza de su padre. Es símbolo de inteligencia y justicia, y se la representa con lanza y escudo. Patrona de las artes y la civilización, se le atribuyen invenciones como la brida y el arado. Jugó un papel clave en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
+            Atenea es la diosa griega de la sabiduría, la estrategia y la guerra justa, hija de Zeus. Nació
+            completamente armada de la cabeza de su padre. Es símbolo de inteligencia y justicia, y se la representa con
+            lanza y escudo. Patrona de las artes y la civilización, se le atribuyen invenciones como la brida y el
+            arado. Jugó un papel clave en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
           </p>
-          <div class="collapse-section1-text">         
+          <div class="collapse-section1-text">
             <div class="collapse" id="collapse-section1-text">
               <h1 class="title-font-1">
                 PALIKARI
               </h1>
-              Atenea es la diosa griega de la sabiduría, la estrategia y la guerra justa, hija de Zeus. Nació completamente armada de la cabeza de su padre. Es símbolo de inteligencia y justicia, y se la representa con lanza y escudo. Patrona de las artes y la civilización, se le atribuyen invenciones como la brida y el arado. Jugó un papel clave en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
+              Atenea es la diosa griega de la sabiduría, la estrategia y la guerra justa, hija de Zeus. Nació
+              completamente armada de la cabeza de su padre. Es símbolo de inteligencia y justicia, y se la representa
+              con lanza y escudo. Patrona de las artes y la civilización, se le atribuyen invenciones como la brida y el
+              arado. Jugó un papel clave en la guerra de Troya y apoyó a héroes como Perseo y Odiseo.
             </div>
-            <a class="text-light" data-bs-toggle="collapse" href="#collapse-section1-text" role="button" aria-expanded="false" aria-controls="collapse-section1-text" >
+            <a class="text-light" data-bs-toggle="collapse" href="#collapse-section1-text" role="button"
+              aria-expanded="false" aria-controls="collapse-section1-text">
               Conoce a Atenea... <i class="bi bi-chevron-expand"></i>
             </a>
           </div>
@@ -86,7 +90,7 @@
           </div>
           <div class="swiper-slide">
             <img src="./assets/img/iconos_personajes/medusamo.png" class="" />
-            <h3>medusamo</h3>
+            <h3>Medusa Moustro</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
           <div class="swiper-slide">
@@ -101,7 +105,7 @@
           </div>
           <div class="swiper-slide">
             <img src="./assets/img/iconos_personajes/rey.png" class="" />
-            <h3>Rey</h3>
+            <h3>Polidectes</h3>
             <p class="d-block text-center">Descripción del personaje</p>
           </div>
         </div>
@@ -118,16 +122,23 @@
             <div class="normal-info-content">
               <h1>Comic info</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus quas totam odit alias ullam perspiciatis? Qui distinctio error, ipsa odit ipsum expedita nostrum earum maxime eligendi ab consequuntur laboriosam, ratione sed molestias hic veniam adipisci quia incidunt modi minus sunt. Unde quam mollitia, expedita vitae odit iste repudiandae dignissimos molestias, perspiciatis a quasi, at praesentium architecto hic nobis delectus in quos ex sed voluptate sunt impedit quo. Repudiandae, reprehenderit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus quas totam odit alias ullam
+                perspiciatis? Qui distinctio error, ipsa odit ipsum expedita nostrum earum maxime eligendi ab
+                consequuntur laboriosam, ratione sed molestias hic veniam adipisci quia incidunt modi minus sunt. Unde
+                quam mollitia, expedita vitae odit iste repudiandae dignissimos molestias, perspiciatis a quasi, at
+                praesentium architecto hic nobis delectus in quos ex sed voluptate sunt impedit quo. Repudiandae,
+                reprehenderit.
               </p>
             </div>
             <div class="info-content-collapse">
-            <div class="collapse" id="collapseExample">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-            <a class="text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Comic info <i class="bi bi-chevron-expand"></i>
-            </a>
+              <div class="collapse" id="collapseExample">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+                the user activates the relevant trigger.
+              </div>
+              <a class="text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                Comic info <i class="bi bi-chevron-expand"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -151,7 +162,7 @@
       <!-- comic title -->
       <div class="row">
         <div class="d-flex justify-content-center my-2 mx-2 comic-title">
-          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3" >
+          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3">
             COMIC
           </h2>
         </div>
@@ -278,7 +289,7 @@
       <!-- titulo nosotras -->
       <div class="row">
         <div class="d-flex justify-content-center my-2 mx-2 comic-title">
-          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3" >
+          <h2 class="d-inline border-top w-25 text-dark fw-bold border-warning mb-3">
             NOSOTRAS
           </h2>
         </div>

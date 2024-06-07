@@ -116,7 +116,7 @@ h2 {
   transform: translate(-50%, -50%);
   overflow-x: hidden;
   scrollbar-width: none;
-  width: 100%;
+  width: 120%;
 }
 
 .scroll p {
@@ -437,7 +437,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .inicio-content {
     position: absolute;
     bottom: 10%;
@@ -510,6 +510,10 @@ h2 {
 
   .second-prom-panel {
     height: fit-content !important;
+  }
+
+  .atenea-btn-text span {
+    display: none;
   }
 
   .card {

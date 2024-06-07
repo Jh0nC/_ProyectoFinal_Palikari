@@ -26,9 +26,9 @@
         <li class="nav-item">
           <?php
           if (isset($_SESSION['name'])) {
-            echo '<a class="nav-link fs-3 link-light" aria-current="page" href="'.$navbarRoutes['tienda'] .'">Tienda</a>';
+            echo '<a class="nav-link fs-3 link-light" aria-current="page" href="' . $navbarRoutes['tienda'] . '">Tienda</a>';
           } else {
-            echo '<a class="nav-link fs-3 link-light" aria-current="page" href="'.$navbarRoutes['iniciarSesion'] .'">Tienda</a>';
+            echo '<a class="nav-link fs-3 link-light" aria-current="page" href="' . $navbarRoutes['iniciarSesion'] . '">Tienda</a>';
           }
           ?>
         </li>
@@ -39,7 +39,7 @@
         <?php
         if (isset($_SESSION['name'])) {
           echo '
-        <span class="text-light fs-4 text-decoration-none">
+        <span class="btn text-light fs-4 text-decoration-none">
           ' . $_SESSION['name'] . '
           <i class="bi bi-person-circle fs-4 ms-3 text-light"></i>
         </span>';

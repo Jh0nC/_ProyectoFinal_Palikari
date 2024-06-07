@@ -151,7 +151,7 @@ input::placeholder {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .img-fondo {
         width: auto;
         height: 100%;
