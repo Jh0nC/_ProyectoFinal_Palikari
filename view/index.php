@@ -1,4 +1,10 @@
 <?php session_start() ?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./assets/img/logo_whiteLine.png" type="image/x-icon" />
   <title>Palikari</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -24,8 +31,8 @@
 
     $navbarRoutes = array(
       'logoImgSrc' => './assets/img/logo_whiteLine.png',
-      'logo' => 'index.php',
-      'inicio' => 'index.php',
+      'logo' => './index.php',
+      'inicio' => './index.php',
       'comic' => '#comic',
       'equipo' => '#equipo',
       'tienda' => './pages/tienda.php',
@@ -218,8 +225,7 @@
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      ¿Cuáles eran las habilidades distintivas
-                      de Atenea en la mitología griega?
+                      ¿Cuáles eran las habilidades distintivas de Atenea en la mitología griega?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -232,7 +238,7 @@
                         artesanía y las artes domésticas
                       </div>
                       <div>
-                        <img src="./img/pepito22.webp" alt="" width="200px" height="200px" />
+                        <img src="./assets/img/tienda/boton/pepito22.webp" alt="" width="200px" height="200px" />
                       </div>
                     </div>
                   </div>
@@ -241,15 +247,19 @@
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      ¿Cuál era el símbolo animal de Atenea y
-                      qué significado tenía?
+                      ¿Cuál era el símbolo animal de Atenea y qué significado tenía?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      El búho era el símbolo animal de Atenea,
-                      representando la sabiduría y la
-                      inteligencia en la mitología griega
+                    <div class="accordion-body d-flex">
+                      <div>
+                        El búho era el símbolo animal de Atenea,
+                        representando la sabiduría y la
+                        inteligencia en la mitología griega
+                      </div>
+                      <div>
+                        <img src="./assets/img/tienda/boton/pepito22.webp" alt="" width="200px" height="200px" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -261,12 +271,17 @@
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Atenea no tuvo una madre en el sentido
-                      convencional. Según la mitología griega,
-                      surgió completamente armada de la cabeza
-                      de Zeus después de que este último
-                      sufriera un fuerte dolor de cabeza.
+                    <div class="accordion-body d-flex">
+                      <div>
+                        Atenea no tuvo una madre en el sentido
+                        convencional. Según la mitología griega,
+                        surgió completamente armada de la cabeza
+                        de Zeus después de que este último
+                        sufriera un fuerte dolor de cabeza.
+                      </div>
+                      <div>
+                        <img src="./assets/img/tienda/boton/pepito22.webp" alt="" width="200px" height="200px" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -274,7 +289,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Close
+                Cerrar
               </button>
             </div>
           </div>

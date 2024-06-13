@@ -964,6 +964,12 @@ main {
 	width: auto;
 }
 
+@media screen and (max-width: 360px) {
+	.card-img {
+		height: 130px !important;
+	}
+}
+
 .back-card-img {
 	z-index: 1;
 	transition-duration: .3s;

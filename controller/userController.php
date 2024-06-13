@@ -1,6 +1,8 @@
 <?php
-// require_once '../model/userModel.php';
+// require_once './../model/userModel.php';
 require_once "C:\\laragon\\www\\_ProyectoFinal_Palikari\\model\\userModel.php";
+// require_once __DIR__ ."/model/userModel.php";
+// require_once(dirname(__FILE__) ."/model/userModel.php");
 
 class userController
 {

@@ -30,6 +30,7 @@
           } else {
             echo '<a class="nav-link fs-3 link-light" aria-current="page" href="' . $navbarRoutes['iniciarSesion'] . '">Tienda</a>';
           }
+          // echo '<a class="nav-link fs-3 link-light" aria-current="page" href="' . $navbarRoutes['tienda'] . '">Tienda</a>';
           ?>
         </li>
       </ul>

@@ -87,7 +87,8 @@ if (!isset($_SESSION['name'])) {
           </div>
         </div>
       </div>
-    </div><!-- /slideshow -->
+    </div> 
+    <!-- /slideshow -->
     <nav class="boxnav">
       <button class="boxnav__item boxnav__item--prev">
         <i class="bi bi-chevron-left"></i>
@@ -146,7 +147,7 @@ if (!isset($_SESSION['name'])) {
             <button class="action action--close">Close</button>
           </div>
         </div>
-      </div><!-- /details -->
+      </div> 
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
@@ -189,7 +190,7 @@ if (!isset($_SESSION['name'])) {
             <button class="action action--close">Close</button>
           </div>
         </div>
-      </div><!-- /details -->
+      </div>
       <div class="details">
         <div class="details__item details__item-img" data-direction="ttb">
           <div class="details__inner">
@@ -238,6 +239,7 @@ if (!isset($_SESSION['name'])) {
 
   <div class="container-fluid mt-5">
 
+    <!-- productos renderizados -->
     <div class="row px-5" id="lista-productos">
 
     </div>
@@ -265,7 +267,6 @@ if (!isset($_SESSION['name'])) {
     crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 
 </body>
 

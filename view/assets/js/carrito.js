@@ -88,7 +88,7 @@ function renderDetails(details) {
 }
 
 // Variables
-const productsContainer = document.querySelector("#lista-productos"); // Assuming you have an element with ID "lista-productos"
+const productsContainer = document.querySelector("#lista-productos"); 
 const currency = '$';
 const cart = [];
 const shopCartContainer = document.querySelector("#shop-cart");
